@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+body {
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 239, 239);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(57, 57, 57);
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 50px 0 10px 0;
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(81, 0, 111);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.dark a {
+    color: rgb(36, 105, 208);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255), 
+                inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.main-text {
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.dark .square {
+    background-color: rgb(71, 71, 71);
+}
+
+#linktree-clone {
+    background-image: url(./image/vecteezy_a-set-of-social-media-icons_16337947_826.png);
+    background-size: cover;
+}
+
+#review-display {
+    background-image: url(./image/vecteezy_3d-customer-5-star-feedback-concept-icon-or-3d-5-star-rating_10915901_298.png);
+    background-size: cover;
+}
+
+#calculadora-imc {
+    background-image: url(./image/vecteezy_check-list-with-clipboard-calculator-pencil-illustration_8480548_562.png);
+    background-size: cover;
+}
+
+#lista-de-tarefas {
+    background-image: url(./image/vecteezy_3d-checklist-clipboard-concept-icon-or-3d-to-do-list-concept_10915822_878.png);
+    background-size: cover;
+}
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.cube:before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 100%;
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+.cube:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#html {
+    left: 100px;
+    bottom: 80px;
+    background-image: url(https://raw.githubusercontent.com/kubowania/light-dark-mode-portfolio/main/light-dark-mode-portfolio/images/html-square.png);
+    background-size: cover;
+    background-color: rgb(229, 36, 36);
+    box-shadow: -60px 60px 20px rgb(50 50 50 /15%);
+}
+
+#html:before {
+    background-color: rgb(197, 90, 90);
+}
+
+#html:after {
+    background-color: rgb(222, 181, 181);
+}
+
+#css {
+    left: 250px;
+    bottom: 240px;
+    background-image: url(https://raw.githubusercontent.com/kubowania/light-dark-mode-portfolio/main/light-dark-mode-portfolio/images/css-square.png);
+    background-size: cover;
+    background-color: rgb(54, 33, 215);
+    box-shadow: -100px 100px 20px rgb(50 50 50 /15%);
+}
+
+#css:before {
+    background-color: rgb(130, 135, 205);
+}
+
+#css:after {
+    background-color: rgb(172, 171, 255);
+}
+
+#javascript {
+    left: 450px;
+    bottom: 200px;
+    background-image: url(https://raw.githubusercontent.com/kubowania/light-dark-mode-portfolio/main/light-dark-mode-portfolio/images/javascript-square.png);
+    background-size: cover;
+    background-color: rgb(228, 109, 40);
+    box-shadow: -40px 40px 20px rgb(50 50 50 /15%);
+}
+
+#javascript:before {
+    background-color: rgb(210, 145, 108);
+}
+
+#javascript:after {
+    background-color: rgb(249, 204, 158);
+}
+
+#react {
+    left: 350px;
+    bottom: 40px;
+    background-image: url(https://raw.githubusercontent.com/kubowania/light-dark-mode-portfolio/main/light-dark-mode-portfolio/images/react-square.png);
+    background-size: cover;
+    background-color: rgb(40, 168, 228);
+    box-shadow: -80px 80px 20px rgb(50 50 50 /15%);
+}
+
+#react:before {
+    background-color: rgb(108, 185, 210);
+}
+
+#react:after {
+    background-color: rgb(158, 220, 249);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(136, 136, 136);
+}
+
+.dark footer {
+    background-color: rgb(43, 43, 43);
+}
+
+@media only screen and (min-width: 970px) {
+    .main-text {
+        width: 50%;
+    }
+
+    .square {
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero-image {
+        display: none;
+    }
+}
